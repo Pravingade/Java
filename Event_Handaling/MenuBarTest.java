@@ -43,13 +43,11 @@ class myLayout extends Jframe implements ActionListener
            c=color.RED;  
            repaint();
         }
-        
         if(e.getsource()==g)
         {
            c=color.GREEN; //c=JcolorChoser.showdialog(this,"select color");  
            repaint();
         }
-        
         if(e.getsource()==b)
         {
            c=color.BLUE;  
@@ -60,13 +58,11 @@ class myLayout extends Jframe implements ActionListener
             i=1;
             repaint();
         }
-        
         if(e.getsource()==rect)
         {
            i=2;  
            repaint();
         }
-        
         public void paint(Graphics g)
         {
             super.paint(g);
