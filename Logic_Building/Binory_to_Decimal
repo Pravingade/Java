@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class Main
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       int n1,sum=0,i=0;
+       while(n!=0)
+       {
+            n1=n%10;
+            int x = (int)Math.pow(2,i);
+            sum = sum + (n1*x);
+            n=n/10;
+            i++;
+       }
+       System.out.println(sum);
+    }
+}
