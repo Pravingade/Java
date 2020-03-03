@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class Array
+{
+    int m;
+    double feet,inch;
+    Scanner sc=new Scanner(System.in);
+    //int arr[]=new int[m];
+    Array()
+    {
+        System.out.println("Enter the Student Hight in cm: ");
+        m=sc.nextInt();
+    }
+    Array(int m)
+    {
+        System.out.println("parameterised constructor");
+        this.m=m;
+    }
+    double HightinInch()
+    {
+        inch=m*0.394;
+        return inch;
+    }
+    double HightinFeet()
+    {
+        feet=m*0.0328;
+        return feet;
+    }
+   
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Array a=new Array();
+	    System.out.println("Hight in Inch :"+a.HightinInch());
+	     System.out.println("Hight in Feet :"+a.HightinFeet());
+	    
+	}
+}
