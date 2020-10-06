@@ -1,0 +1,41 @@
+package pro;
+import java.util.Scanner;
+import java.io.IOException;
+import java.sql.SQLException;
+class test
+{
+	void fun(int i)throws IOException,SQLException
+	{
+		if(i<=5)
+			throw new IOException("Device error...");
+		else 
+			throw new SQLException("Connection fail...");
+	}
+}
+
+public class Exception 
+{
+
+	public static void main(String[] args)
+	{
+		int j;
+		System.out.println("welcome in the Exception.");
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Enter the value: ");
+	    j=sc.nextInt();
+		test t=new test();
+		try
+		{
+			t.fun(j);
+		}
+		catch(IOException|SQLException e)
+		{
+			e.printStackTrace();
+		}
+        finally
+        {
+        	System.out.println("Finally block is always execute.");
+        }
+	}
+
+}
