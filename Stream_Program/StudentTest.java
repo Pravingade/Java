@@ -23,5 +23,4 @@ public class StudentTest
         System.out.println(s12);
 
 	}
-
 }
