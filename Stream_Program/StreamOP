@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+      List <String> li=new ArrayList<String>();
+      li.add("Rohit");
+      li.add("Pravin");
+      li.add("Vishal");
+      li.add("Sanket");
+      li.add("Akshay");
+      li.add("Abhijit");
+      
+      int cnt=0;
+      for(String S:li)
+      {
+          if (String.length()<6)
+          cnt++;
+      }
+      System.out.println("Count :"+cnt);
+	
+//	long count=li.Stream().filter(str->str.length()<6>.count());
+//	System.out.println("count :"+cnt);
+	
+	List <Integer> ls=Array.asList(3,4,5,78,89,32,12);
+//	List.Stream().filter(num->num%s==0)
+    for(Integer s:ls)
+    {
+        System.out.println(s);
+    }
+	}
+}
